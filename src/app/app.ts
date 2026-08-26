@@ -33,6 +33,8 @@ export class App implements OnInit {
       new Date(),
       5, 
     )
+
+    this.myOtherSnap.location = 'Yaoundé, Cameroun';
   }
 
 

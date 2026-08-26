@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FaceSnap as FaceSnapModel } from '../models/face-snap';
 
 @Component({
@@ -9,10 +9,9 @@ import { FaceSnap as FaceSnapModel } from '../models/face-snap';
   styleUrl: './face-snap.scss',
 })
 export class FaceSnapComponent implements OnInit {
- @Input() faceSnap! : FaceSnapModel;
-
+  @Input() faceSnap! : FaceSnapModel;
   snapButtonText! : string; 
-  userHasSnapped ! : boolean; 
+  userHasSnapped! : boolean; 
 
   ngOnInit(): void {
     this.snapButtonText = "oh snap!";
