@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FaceSnapList } from './face-snap-list/face-snap-list';
 import { Header } from './header/header';
+import {RouterOutlet} from '@angular/router';
 
 
 
@@ -8,8 +8,8 @@ import { Header } from './header/header';
   selector: 'app-root',
   standalone: true,
   imports: [
-    FaceSnapList,
-    Header
+    Header,
+    RouterOutlet
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
