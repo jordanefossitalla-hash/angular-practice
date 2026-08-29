@@ -5,7 +5,7 @@ import {Router} from "@angular/router";
 @Component({
   selector: 'app-landing-page',
   imports: [
-    RouterLink
+    RouterLink,
   ],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss',
